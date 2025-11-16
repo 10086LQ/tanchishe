@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>贪吃蛇游戏</h1>
+    <div id="game-container">
+        <canvas id="game-board" width="400" height="400"></canvas>
+        <div id="game-over">
+            <h2>游戏结束</h2>
+            <p>最终得分: <span id="final-score">0</span></p>
+            <button id="restart-btn">再来一局</button>
+        </div>
+    </div>
+    <div id="score-display">得分: <span id="score">0</span></div>
+    <div id="controls">
+        <button class="control-btn hidden"></button>
+        <button class="control-btn" id="up">↑</button>
+        <button class="control-btn hidden"></button>
+        <button class="control-btn" id="left">←</button>
+        <button class="control-btn hidden"></button>
+        <button class="control-btn" id="right">→</button>
+        <button class="control-btn hidden"></button>
+        <button class="control-btn" id="down">↓</button>
+        <button class="control-btn hidden"></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
